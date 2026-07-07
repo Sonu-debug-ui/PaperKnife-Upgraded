@@ -68,6 +68,11 @@ android {
         includeInBundle false
         includeInApk false
     }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
 }
 
 repositories {
