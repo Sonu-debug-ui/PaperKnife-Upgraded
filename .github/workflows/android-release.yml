@@ -96,6 +96,13 @@ jobs:
             cp paperknife-global-unsigned.apk "paperknife-unsigned-v${VERSION}.apk"
             cp paperknife-fdroid-unsigned.apk "paperknife-lite-unsigned-v${VERSION}.apk"
           fi
+          
+          # Clean up intermediate files so they are not matched by paperknife-*.apk
+          rm -f paperknife-global-unsigned.apk \
+                paperknife-fdroid-unsigned.apk \
+                paperknife-global-unsigned-signed.apk \
+                paperknife-fdroid-unsigned-signed.apk
+                
           echo "APP_VERSION=${VERSION}" >> $GITHUB_ENV
 
       - name: Upload Artifacts
