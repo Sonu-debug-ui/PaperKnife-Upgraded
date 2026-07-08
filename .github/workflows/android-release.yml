@@ -53,7 +53,7 @@ jobs:
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleRelease -x lintVitalAnalyzeRelease -x lintVitalReportRelease -x lintVitalRelease
+          ./gradlew assembleRelease
           mv app/build/outputs/apk/release/app-release-unsigned.apk ../paperknife-global-unsigned.apk
 
       - name: Build F-Droid Lite APK (No OCR)
@@ -67,7 +67,7 @@ jobs:
           npx cap sync android
           
           cd android
-          ./gradlew assembleRelease -x lintVitalAnalyzeRelease -x lintVitalReportRelease -x lintVitalRelease
+          ./gradlew assembleRelease
           mv app/build/outputs/apk/release/app-release-unsigned.apk ../paperknife-fdroid-unsigned.apk
 
       - name: Sign Both APKs
