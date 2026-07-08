@@ -71,7 +71,9 @@ jobs:
           mv app/build/outputs/apk/release/app-release-unsigned.apk ../paperknife-fdroid-unsigned.apk
 
       - name: Sign Both APKs
-        if: secrets.ANDROID_SIGNING_KEY != ''
+        if: env.SIGNING_KEY != ''
+        env:
+          SIGNING_KEY: ${{ secrets.ANDROID_SIGNING_KEY }}
         id: sign_app
         uses: ilharp/sign-android-release@v2
         with:
