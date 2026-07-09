@@ -20,19 +20,10 @@ import {
   Sun as SunIcon, 
   Upload as UploadIcon,
   LayoutGrid as LayoutGridIcon, 
-  ClipboardList,
-  HelpCircle as HelpIcon,
-  Activity as ActivityIcon,
-  Star as StarIcon,
-  Info as InfoIcon,
-  User as UserIcon,
-  Github as GHIcon,
-  DownloadCloud
+  ClipboardList
 } from 'lucide-react'
 import { useState, useEffect, useRef } from 'react'
-import { getRecentActivity, ActivityEntry, clearActivity } from '../utils/recentActivity'
-import { toast } from 'sonner'
-import { Capacitor } from '@capacitor/core'
+import { getRecentActivity, ActivityEntry } from '../utils/recentActivity'
 import { PaperKnifeLogo } from './Logo'
 import { APP_VERSION } from '../utils/version'
 
