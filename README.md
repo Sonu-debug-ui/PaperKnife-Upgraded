@@ -16,10 +16,8 @@
 ## Preview
 
 <p align="center">
-  <img src="assets/preview/screenshot1.jpg" width="45%" alt="Web View">
-  <img width="1080" height="2352" alt="1783616504810" src="https://github.com/user-attachments/assets/77e3dfa0-b3be-4c47-b314-0fcb75deda1c" />
-
-  <img src="assets/preview/screenshot2.jpg" width="45%" alt="Android View">
+  <img src="https://github.com/user-attachments/assets/7b784bb1-d5ee-4176-8854-d7eb7d915323" width="45%" alt="Web View">
+  <img src="https://github.com/user-attachments/assets/77e3dfa0-b3be-4c47-b314-0fcb75deda1c" width="45%" alt="Android View">
 </p>
 
 ---
